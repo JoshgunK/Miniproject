@@ -1,0 +1,21 @@
+{
+  "sliders": [
+    {
+      "id": "1",
+      "title": "Don't miss amazing",
+      "title1": "grocery deals",
+      "title2": "Sign up for the daily newsletter",
+      "image": "../../Images/slider-1.png"
+    },
+    {
+      "id": "2",
+      "title": "Fresh Vegetables",
+      "title1": "Big discount",
+      "title2": "Save up to 50% off on your first order",
+      "image": "../../Images/slider-2.png"
+      
+}
+],
+  "categories": [],
+  "products": []
+}

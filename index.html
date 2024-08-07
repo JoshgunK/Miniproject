@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Assets/Js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <title >Mini Project Nest Front-End</title>
+    <link rel="icon" type="image/x-icon"sizes="32x32" href="./Assets/Images/icon-1.svg">
+</head>
+<body style="overflow-x: hidden; width: 100%; padding: 0; margin-left: 30px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <nav class="navbar navbar-expand-lg" style="width: 1705px; padding-left: 100px; height: 100px; background-color: transparent;">
+        <div class="container-fluid">
+            <img style="width: 150px;"src="./Assets/Images/logo.svg" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search" style="margin-left: 70px; border: 2px solid; border-color: #20c55a55; border-radius: 5px;padding: 10px 20px;">
+                    <select class="form-select" aria-label="Default select example" style="width: 180px; border-color: transparent;">
+                        <option selected>All Categories</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <input class="form-control me-2" type="search" placeholder="Search for items..." aria-label="Search" style="width: 450px; border-color: transparent; border-left: 1px solid; height: 30px; border-radius: 0%; margin-top: 5px; border-left-color: gray; background-image: url(./Assets/Images/search.png); background-repeat: no-repeat; background-position: right;">              
+                </form>
+                <select class="form-select" aria-label="Default select example" style="font-size: 12px; width: 180px; border-color: rgba(154, 154, 154, 0.638); margin-left: 35px; height: 30px; background-image: url(./Assets/Images/icon-location.svg);color: #29A56C;">
+                    <option selected>Your Location</option>
+                    <option value="1">Azerbaijan</option>
+                    <option value="2">Turkey</option>
+                    <option value="3">Germany</option>
+                </select>
+                <div style="margin-left: 20px; display: flex; margin-top: 15px;">
+                    <a href="#" style="text-decoration: none;color: #343a40;"><p style="font-size: 12px;"><img style="margin-left: 15px;" src="./Assets/Images/icon-compare.svg" alt="">Compare</p></a>
+                    <a href="#" style="text-decoration: none;color: #343a40;"><p style="font-size: 12px;"><img style="margin-left: 15px;" src="./Assets/Images/icon-heart.svg" alt="">Wishlist</p></a>
+                    <a href="#" style="text-decoration: none;color: #343a40;"><p style="font-size: 12px;"><img style="margin-left: 15px;" src="./Assets/Images/icon-cart.svg" alt="">Cart</p></a>
+                    <a href="#" style="text-decoration: none;color: #343a40;"><p style="font-size: 12px;"><img style="margin-left: 15px;" src="./Assets/Images/icon-user.svg" alt="">Account</p></a>
+                </div>
+            </div>
+        </div>
+        </nav>
+    <nav class="navbar navbar-expand-lg" style="width: 1705px; padding-left: 100px; height: 70px; background-color: transparent;">
+        <div class="container-fluid">
+            <select class="form-select" aria-label="Default select example" style="width: 300px; border-color: transparent; height: 50px; background-color: rgb(41, 165, 108); color: white;">
+                <option selected style="background-color: #64ba92;">Milks and Dairies</option>
+                <option selected style="background-color: #64ba92;">Clothing & Beauty</option>
+                <option selected style="background-color: #64ba92;">Fast Food</option>
+                <option selected style="background-color: #64ba92;">Pet Foods & Toy</option>
+                <option selected style="background-color: #64ba92;">Baking material</option>
+                <option selected style="background-color: #64ba92;">Fresh Fruit</option>
+            </select>
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 50px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="margin-left: 50px;color: #72818C;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 50px;">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 50px;">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="margin-left: 50px;">Sliders</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" style="margin-left: 50px;">Contact</a>
+                    </li>
+                </ul>
+                <div class="hotline d-none d-lg-flex" style="margin-left: 200px; height: 65px;padding-bottom: 10px;">
+                    <img src="./Assets/Images/icon-headphone.svg" alt="hotline">
+                    <p style="font-size: 26px; color: rgb(41, 165, 108);">
+                        1900 - 888
+                    <span style="font-size: 13px; display: block; color: gray;">24/7 Support Center</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </nav>
+    <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 1450px; margin-left: 100px;">
+            <div class="carousel-inner" style="border-radius: 20px;">
+              <div class="carousel-item active">
+                <img src="./Assets/Images/slider-1.png" class="d-block w-100" alt="...">
+                <h1 class="display-2 mb-40" style="position: absolute;top: 25%;left: 30%;transform: translate(-50%, -50%);color: #002946;font-weight: bold;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                Don't miss amazing<br>
+                grocery deals
+                </h1>
+                <p style="position: absolute;top: 50%;left: 27%;transform: translate(-50%, -50%);color: #002946; font-size: 30px;" class="mb-65">Sign up for the daily newsletter
+                </p> 
+                <form style="background-color: white; border-radius: 20px; position: absolute;top: 70%;left: 27%;transform: translate(-50%, -50%);">
+                    <img src="./Assets/Images/icon-email-2.svg" alt=""><input style="border-radius: 20px; height: 50px; width: 250px; border-color: transparent; background-color: white;" type="email" placeholder="Your emaill address" tabindex="-1" >
+                    <button style="border-radius: 20px; background-color: rgb(41, 165, 108); color: white;  height: 55px; width: 160px;" class="btn btn-succes" type="submit" >Subscribe</button>
+                </form>
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/Images/slider-2.png" class="d-block w-100" alt="...">
+                <h1 class="display-2 mb-40" style="position: absolute;top: 20%;left: 30%;transform: translate(-50%, -50%);color: #002946;font-weight: bold;">
+                    Fresh Vegetables<br>
+                    Big discount
+                </h1>
+                <p style="position: absolute;top: 50%;left: 27%;transform: translate(-50%, -50%);color: #72818C; font-size: 25px;" class="mb-65">Save up to 50% off on your first order
+                </p> 
+                <form style="background-color: white; border-radius: 20px; position: absolute;top: 70%;left: 27%;transform: translate(-50%, -50%);">
+                    <img src="./Assets/Images/icon-email-2.svg" alt=""><input style="border-radius: 20px; height: 50px; width: 250px; border-color: transparent; background-color: white;" type="email" placeholder="Your emaill address" tabindex="-1" >
+                    <button style="border-radius: 20px; background-color: rgb(41, 165, 108); color: white;  height: 55px; width: 160px;" class="btn btn-succes" type="submit" >Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <section>
+            <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items: center;">
+                <h1>Featured Categories</h1>
+                <ul class="list-inline nav nav-tabs links">
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none;font-size: 14px; color: black;">Cake & Milk</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none;font-size: 14px; color: black;">Coffees & Teas</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none;font-size: 14px; color: black;">Pet Foods</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none;font-size: 14px; color: black;">Vegetables</a></li>
+                </ul>
+            </div>
+            <div class="container-fluid" style="display: flex; margin-left: 90px; margin-top: 50px;">
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-13.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Cake & Milk</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-1.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Vegetables</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-2.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Strawberry</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-3.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Snack</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-4.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Black plum</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-14.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Coffe & Tea</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-9.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Red Apple</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-11.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Cake & Milk</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-12.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black;" href="#" tabindex="0">Oganic Kiwi</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+                <div style="background-color: #F2FCE4; width: 130px; border-radius: 5px; height: 200px; margin-right: 12.5px;">
+                    <figure class="img-hover-scale overflow-hidden">
+                        <a href="shop-grid-right.html" tabindex="0"><img src="./Assets/Images/cat-5.png" alt=""></a>
+                    </figure>
+                    <h6 style="margin-left: 20px;"><a style="text-decoration: none; color: black; font-size: 14px;" href="#" tabindex="0">Custard apple</a></h6>
+                    <span style="color: #72818C; margin-left: 30px;">26 items</span>                
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid" style="display: flex; margin-left: 90px; margin-top: 50px;">
+            <div style="background-color:#F0E8D5; width: 460px; border-radius: 5px; height: 300px; margin-right: 17px; display: flex; position: relative;">
+                <div style="width: 100%; height: 100%;">
+                    <img src="./Assets/Images/banner-1.png" alt="" style="width: 100%; height: 100%; border-radius: 5px;">
+                </div>
+                <div class="banner-text" style="padding-top: 80px; padding-left: 30px; width: 250px; position: absolute; top: 0; left: 0; z-index: 1; color: black;">
+                    <h4>
+                        Everyday Fresh & Clean with Our Products
+                    </h4>
+                    <button style="background-color: rgb(41, 165, 108); color: white; border-color: white ; border-radius: 7px; width: 120px; height: 40px; margin-top: 50px;">
+                        <p style="margin-top: 5px;">
+                            Shop Now →
+                        </p>
+                    </button>                    
+                </div>              
+            </div>    
+            <div style="background-color:#F0E8D5; width: 460px; border-radius: 5px; height: 300px; margin-right: 17px; display: flex; position: relative;">
+                <div style="width: 100%; height: 100%;">
+                    <img src="./Assets/Images/banner-2.png" alt="" style="width: 100%; height: 100%; border-radius: 5px;">
+                </div>
+                <div class="banner-text" style="padding-top: 80px; padding-left: 30px; width: 300px; position: absolute; top: 0; left: 0; z-index: 1; color: black;">
+                    <h4>
+                        Make your Breakfast Healthy and Easy
+                    </h4>
+                    <button style="background-color: rgb(41, 165, 108); color: white; border-color: white ; border-radius: 7px; width: 120px; height: 40px; margin-top: 80px;">
+                        <p style="margin-top: 5px;">
+                            Shop Now →
+                        </p>
+                    </button>                    
+                </div>              
+            </div>    
+            <div style="background-color:#F0E8D5; width: 460px; border-radius: 5px; height: 300px; margin-right: 17px; display: flex; position: relative;">
+                <div style="width: 100%; height: 100%;">
+                    <img src="./Assets/Images/banner-3.png" alt="" style="width: 100%; height: 100%; border-radius: 5px;">
+                </div>
+                <div class="banner-text" style="padding-top: 80px; padding-left: 30px; width: 250px; position: absolute; top: 0; left: 0; z-index: 1; color: black;">
+                    <h4>
+                        The best Organic Products Online
+                    </h4>
+                    <button style="background-color: rgb(41, 165, 108); color: white; border-color: white ; border-radius: 7px; width: 120px; height: 40px; margin-top: 80px;">
+                        <p style="margin-top: 5px;">
+                            Shop Now →
+                        </p>
+                    </button>                    
+                </div>              
+            </div>    
+
+        </div>
+
+        <div>
+          <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items: center;">
+                <h1>Popular Products</h1>
+                <ul class="list-inline nav nav-tabs links" style="margin-left: 400px;">
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black; color: #29A56C;">All</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Milk&Dairies</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Coffes&Teas</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Pet Foods</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Meats</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Vegetables</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Fruits</a></li>
+                </ul>
+           </div>
+          <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items:center">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/Images/product-1-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h6 style="color: #72818C;">Snack</h6>
+                  <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                  <div style="display: flex; margin-top: 5px;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                  </div>
+                  <div style="display: flex;">
+                    <p style="font-size: 15px; color: #72818C; ">By</p>
+                    <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                  </div>                 
+                  <div style="display: flex;">
+                    <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                    <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>                 
+                </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-2-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-3-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-4-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-5-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>                     
+           </div>
+           <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items:center">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/Images/product-6-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h6 style="color: #72818C;">Snack</h6>
+                  <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                  <div style="display: flex; margin-top: 5px;">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                  </div>
+                  <div style="display: flex;">
+                    <p style="font-size: 15px; color: #72818C; ">By</p>
+                    <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                  </div>                 
+                  <div style="display: flex;">
+                    <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                    <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                  </div>                 
+                </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-7-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-8-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-9-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>
+            <div class="card" style="width: 18rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-10-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Snack</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                      </div>
+                      <div style="display: flex;">
+                        <p style="font-size: 15px; color: #72818C; ">By</p>
+                        <p style="color: #29A56C; margin-left: 5px; ">NestFood</p>
+                      </div>                 
+                      <div style="display: flex;">
+                        <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                        <a  href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                      </div>                 
+                    </div>
+                </div>                     
+           </div>
+        </div>
+
+        <div>
+         <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items: center;">
+                <h1>Daily Best Sells</h1>
+                <ul class="list-inline nav nav-tabs links" style="margin-left: 850px;">
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black; color: #29A56C;">Featured</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">Popular</a></li>
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">New added</a></li>
+                </ul>
+           </div>        
+        <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items:center">
+                <div class="card" style="width: 21rem; height: 555px; position: relative; display: inline-block; border-radius: 5px; overflow: hidden;">
+                <img src="./Assets/Images/banner-4.png" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; background: rgba(0, 0, 0, 0.2); border-radius: 5px;">
+                    <h1 style="color: #253D4E; margin-bottom: 100px; padding: 30px;">Bring nature into your home</h1>
+                    <button style="background-color: rgb(41, 165, 108); color: white; border: none; border-radius: 7px; width: 110px; height: 40px; margin-bottom: 100px; font-size: 16px; margin-right: 150px; ">
+                        Shop Now →
+                    </button>
+                </div>
+                    </div>          
+                <div class="card" style="width: 17rem; margin-left: 10px;">
+                    <img src="./Assets/Images/product-1-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                       <h6 style="color: #72818C;">Hodo foods</h6>
+                      <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                      <div style="display: flex; margin-top: 5px;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;"></h6>
+                      </div>                                               
+                      <div>
+                        <div style="display: flex;"><p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> </div>
+                        <p style="color: #72818C;">Sold 90/120</p>
+                        <a  href="#" class="btn btn-primary" style="background-color: #3BB77E; color: white; border: #29A56C; height: 40px;  width: 245px;">Add<i class="fa-solid fa-cart-shopping "></i></a>
+                      </div>                 
+                    </div>
+                    </div>
+                <div class="card" style="width: 17rem; margin-left: 10px;">
+                        <img src="./Assets/Images/product-2-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                           <h6 style="color: #72818C;">Hodo foods</h6>
+                          <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                          <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;"></h6>
+                          </div>                                               
+                          <div>
+                            <div style="display: flex;"><p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> </div>
+                            <p style="color: #72818C;">Sold 90/120</p>
+                            <a  href="#" class="btn btn-primary" style="background-color: #3BB77E; color: white; border: #29A56C; height: 40px;  width: 245px;">Add<i class="fa-solid fa-cart-shopping "></i></a>
+                          </div>                 
+                        </div>
+                    </div>
+                <div class="card" style="width: 17rem; margin-left: 10px;">
+                            <img src="./Assets/Images/product-3-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                               <h6 style="color: #72818C;">Hodo foods</h6>
+                              <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                              <div style="display: flex; margin-top: 5px;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;"></h6>
+                              </div>                                               
+                              <div>
+                                <div style="display: flex;"><p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> </div>
+                                <p style="color: #72818C;">Sold 90/120</p>
+                                <a  href="#" class="btn btn-primary" style="background-color: #3BB77E; color: white; border: #29A56C; height: 40px;  width: 245px;">Add<i class="fa-solid fa-cart-shopping "></i></a>
+                              </div>                 
+                            </div>
+                    </div>
+                <div class="card" style="width: 17rem; margin-left: 10px;">
+                                <img src="./Assets/Images/product-4-1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                   <h6 style="color: #72818C;">Hodo foods</h6>
+                                  <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                                  <div style="display: flex; margin-top: 5px;">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;"></h6>
+                                  </div>                                               
+                                  <div>
+                                    <div style="display: flex;"><p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> </div>
+                                    <p style="color: #72818C;">Sold 90/120</p>
+                                    <a  href="#" class="btn btn-primary" style="background-color: #3BB77E; color: white; border: #29A56C; height: 40px;  width: 245px;">Add<i class="fa-solid fa-cart-shopping "></i></a>
+                                  </div>                 
+                                </div>
+                    </div>             
+            </div>         
+        </div>
+
+        <div>
+            <div style="margin-left: 100px; margin-top: 20px; display: flex; align-items: center;">
+                <h1>Deals Of The Day</h1>
+                <ul class="list-inline nav nav-tabs links" style="margin-left: 1050px;">
+                    <li class="list-inline-item nav-item"><a class="nav-link" href="#" style="text-decoration: none; color: black;">All Deals <i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+             </div>  
+             
+             <div style="margin-left: 100px; margin-top: 50px; display: flex; align-items:center">
+                
+                <div style="position: relative; width: 22rem;">
+                    <img style="width: 100%; height: 100%; border-radius: 10px;" src="./Assets/Images/banner-5.png" alt="">
+                       <div style="position: absolute; top: 40%; left: 10%; width: 18rem; display: flex; justify-content: space-between;">
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">231</h5>
+                            <p>Days</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">23</h5>
+                            <p>Hours</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">30</h5>
+                            <p>Mins</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">56</h5>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="position: absolute; top: 70%; left: 10%; width: 18rem; background: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+                        <div class="card-body">
+                            <h6 style="color: #72818C;">Snack</h6>
+                            <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                            <div style="display: flex; margin-top: 5px;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <h6 style="color: #72818C;">(4.0)</h6>
+                            </div>
+                            <div style="display: flex;">
+                                <p style="font-size: 15px; color: #72818C;">By</p>
+                                <p style="color: #29A56C; margin-left: 5px;">NestFood</p>
+                            </div>                 
+                            <div style="display: flex;">
+                                <p>
+                                    <b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b>
+                                    <h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6>
+                                </p> 
+                                <a href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="position: relative; width: 22rem; margin-left: 15px;">
+                    <img style="width: 100%; height: 100%; border-radius: 10px;" src="./Assets/Images/banner-6.png" alt="">
+                       <div style="position: absolute; top: 40%; left: 10%; width: 18rem; display: flex; justify-content: space-between;">
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">231</h5>
+                            <p>Days</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">23</h5>
+                            <p>Hours</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">30</h5>
+                            <p>Mins</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">56</h5>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="position: absolute; top: 70%; left: 10%; width: 18rem; background: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+                        <div class="card-body">
+                            <h6 style="color: #72818C;">Snack</h6>
+                            <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                            <div style="display: flex; margin-top: 5px;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <h6 style="color: #72818C;">(4.0)</h6>
+                            </div>
+                            <div style="display: flex;">
+                                <p style="font-size: 15px; color: #72818C;">By</p>
+                                <p style="color: #29A56C; margin-left: 5px;">NestFood</p>
+                            </div>                 
+                            <div style="display: flex;">
+                                <p>
+                                    <b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b>
+                                    <h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6>
+                                </p> 
+                                <a href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: relative; width: 22rem; margin-left: 15px;">
+                    <img style="width: 100%; height: 100%; border-radius: 10px;" src="./Assets/Images/banner-7.png" alt="">
+                       <div style="position: absolute; top: 40%; left: 10%; width: 18rem; display: flex; justify-content: space-between;">
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">231</h5>
+                            <p>Days</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">23</h5>
+                            <p>Hours</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">30</h5>
+                            <p>Mins</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">56</h5>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="position: absolute; top: 70%; left: 10%; width: 18rem; background: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+                        <div class="card-body">
+                            <h6 style="color: #72818C;">Snack</h6>
+                            <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                            <div style="display: flex; margin-top: 5px;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <h6 style="color: #72818C;">(4.0)</h6>
+                            </div>
+                            <div style="display: flex;">
+                                <p style="font-size: 15px; color: #72818C;">By</p>
+                                <p style="color: #29A56C; margin-left: 5px;">NestFood</p>
+                            </div>                 
+                            <div style="display: flex;">
+                                <p>
+                                    <b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b>
+                                    <h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6>
+                                </p> 
+                                <a href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>
+
+                <div style="position: relative; width: 22rem; margin-left: 15px;">
+                    <img style="width: 100%; height: 100%; border-radius: 10px;" src="./Assets/Images/banner-8.png" alt="">
+                       <div style="position: absolute; top: 40%; left: 10%; width: 18rem; display: flex; justify-content: space-between;">
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">231</h5>
+                            <p>Days</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">23</h5>
+                            <p>Hours</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">30</h5>
+                            <p>Mins</p>
+                        </div>
+                        <div style="width: 4rem; height: 100%; background: rgba(255, 255, 255, 0.8); border-radius: 10px; text-align: center;">
+                            <h5 style="color: #29A56C;">56</h5>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                
+                    <div class="card" style="position: absolute; top: 70%; left: 10%; width: 18rem; background: rgba(255, 255, 255, 0.9); border-radius: 10px;">
+                        <div class="card-body">
+                            <h6 style="color: #72818C;">Snack</h6>
+                            <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                            <div style="display: flex; margin-top: 5px;">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <h6 style="color: #72818C;">(4.0)</h6>
+                            </div>
+                            <div style="display: flex;">
+                                <p style="font-size: 15px; color: #72818C;">By</p>
+                                <p style="color: #29A56C; margin-left: 5px;">NestFood</p>
+                            </div>                 
+                            <div style="display: flex;">
+                                <p>
+                                    <b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b>
+                                    <h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6>
+                                </p> 
+                                <a href="#" class="btn btn-primary" style="background-color: #ECFFEC; color: #29A56C; border: #29A56C; height: 40px; margin-left: 60px;">Add<i class="fa-solid fa-cart-shopping"></i></a>
+                            </div>                 
+                        </div>
+                    </div>
+                </div>            
+             </div>           
+        </div>
+        
+     <div style="margin-left: 100px; margin-top: 170px; display: flex; align-items: center;">
+            <div style="width: 22rem;">
+                <h3>Top Selling</h3>
+                <hr>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-1.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-2.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-3.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>               
+            </div>
+
+            <div style="width: 22rem; margin-left: 20px;">
+                <h3>Trending Products</h3>
+                <hr>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-4.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-5.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-6.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>               
+            </div>
+
+            <div style="width: 22rem; margin-left: 20px;">
+                <h3>Recently added</h3>
+                <hr>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-7.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-8.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-9.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>               
+            </div>
+
+            <div style="width: 22rem; margin-left: 20px;">
+                <h3>Top Rated</h3>
+                <hr>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-10.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-11.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>
+                <div style="display: flex;">
+                    <div><img style="width: 7rem;" src="./Assets/Images/thumbnail-12.jpg" alt=""></div>
+                    <div style="margin-left: 10px;">
+                        <h6>
+                            Nestle Original Coffee-Mate Coffee Creamer
+                        </h6>
+                        <div style="display: flex; margin-top: 5px;">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> <h6 style="color: #72818C;">(4.0)</h6>
+                          </div>
+                        <div style="display: flex;">
+                            <p><b style="color: #29A56C; font-size: 20px; margin-top: 3px;">$28.85</b><h6 style="font-size: 15px; margin-top: 8px; color: #72818C; text-decoration: line-through; margin-left: 5px;">$32.8</h6></p> 
+                          </div>                         
+                    </div>
+                </div>               
+            </div>        
+        </div>
+
+    </section>
+
+    <footer class="main">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" style="width: 1450px; margin-left: 100px; margin-top: 50px;">
+            <div class="carousel-inner" style="border-radius: 20px;">
+              <div class="carousel-item active">
+                <img src="./Assets/Images/slider-2.png" class="d-block w-100" alt="...">
+                <h1 class="display-2 mb-40" style="position: absolute;top: 25%;left: 35%;transform: translate(-50%, -50%);color: #72818C;">
+                    Stay home & get your daily<br>
+                    needs from our shop
+                </h1>
+                <p style="position: absolute;top: 60%;left: 19%;transform: translate(-50%, -50%);color: #72818C; font-size: 20px;" class="mb-65">Start You'r Daily Shopping with Nest Mart
+                </p> 
+                <form style="background-color: white; border-radius: 20px; position: absolute;top: 75%;left: 20%;transform: translate(-50%, -50%);">
+                    <img src="./Assets/Images/icon-email-2.svg" alt=""><input style="border-radius: 20px; height: 50px; width: 250px; border-color: transparent; background-color: white;" type="email" placeholder="Your emaill address" tabindex="-1" >
+                    <button style="border-radius: 20px; background-color: rgb(41, 165, 108); color: white;  height: 55px; width: 160px;" class="btn btn-succes" type="submit" >Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        <section>
+            <div class="container-fluid" style="display: flex; margin-left: 90px; margin-top: 50px;">
+                <div style="background-color: #8d93984e; width: 270px; border-radius: 5px; height: 90px; margin-right: 21px;">
+                    <div data-wow-delay="0" style="visibility: visible; display: flex; ">
+                        <div class="banner-icon">
+                            <img style="margin-top: 10px; width: 55px;" src="./Assets/Images/icon-1.svg" alt="">
+                        </div>
+                        <div class="banner-text" style="margin-top: 10px;">
+                            <h4 class="icon-box-title">Best prices & offers</h4>
+                            <p style="color: #72818C;">Orders $50 or more</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #e5e7e9; width: 270px; border-radius: 5px; height: 90px; margin-right: 21px;">
+                    <div data-wow-delay="0" style="visibility: visible; display: flex; ">
+                        <div class="banner-icon">
+                            <img style="margin-top: 10px; width: 55px;" src="./Assets/Images/icon-2.svg" alt="">
+                        </div>
+                        <div class="banner-text" style="margin-top: 10px;">
+                            <h4 class="icon-box-title">Free delivery</h4>
+                            <p style="color: #72818C;">24/7 amazing services</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #e5e7e9; width: 270px; border-radius: 5px; height: 90px; margin-right: 21px;">
+                    <div data-wow-delay="0" style="visibility: visible; display: flex; ">
+                        <div class="banner-icon">
+                            <img style="margin-top: 10px; width: 55px;" src="./Assets/Images/icon-3.svg" alt="">
+                        </div>
+                        <div class="banner-text" style="margin-top: 10px;">
+                            <h4 class="icon-box-title">Great daily deal</h4>
+                            <p style="color: #72818C;">When you sign up</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #e5e7e9; width: 270px; border-radius: 5px; height: 90px; margin-right: 21px;">
+                    <div data-wow-delay="0" style="visibility: visible; display: flex; ">
+                        <div class="banner-icon">
+                            <img style="margin-top: 10px; width: 55px;" src="./Assets/Images/icon-4.svg" alt="">
+                        </div>
+                        <div class="banner-text" style="margin-top: 10px;">
+                            <h4 class="icon-box-title">Wide asssortment</h4>
+                            <p style="color: #72818C;">Mega Discounts</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color: #e5e7e9; width: 270px; border-radius: 5px; height: 90px;">
+                    <div data-wow-delay="0" style="visibility: visible; display: flex; ">
+                        <div class="banner-icon">
+                            <img style="margin-top: 10px; width: 55px;" src="./Assets/Images/icon-5.svg" alt="">
+                        </div>
+                        <div class="banner-text" style="margin-top: 10px;">
+                            <h4 class="icon-box-title">Easy returns</h4>
+                            <p style="color: #72818C;">Within 30 days</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="section-padding footer-mid" style="margin-top: 50px; margin-left: 100px; width: 1500px;" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="widget-about font-md mb-md-3 mb-lg-3 mb-xl-0 wow animate__ animate__fadeInUp animated" data-wow-delay="0" style="visibility: visible; animation-name: fadeInUp; width: 320px;">
+                            <div class="logo mb-30">
+                                <a href="index.html" class="mb-15"><img src="./Assets/Images/logo.svg" alt="logo"></a>
+                                <p style="margin-left: 30px;" class="font-lg text-heading">Awesome grocery store website template</p>
+                            </div>
+                            <ul class="contact-infor" style="list-style: none;" >
+                                <li><img src="./Assets/Images/icon-location.svg" alt=""><strong>Address: </strong> <span>5171 W Campbell Ave undefined Kent, Utah 53127 United States</span></li>
+                                <li><img src="./Assets/Images/icon-contact.svg" alt=""><strong>Call Us:</strong><span>(+91) - 540-025-124553</span></li>
+                                <li><img src="./Assets/Images/icon-email-2.svg" alt=""><strong>Email:</strong><span>sale@Nest.com</span></li>
+                                <li><img src="./Assets/Images/icon-clock.svg" alt=""><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-widget col wow animate__ animate__fadeInUp animated" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h4 style="margin-left: 30px;" class="widget-title">Company</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0" style="list-style: none;">
+                            <li><a style=" text-decoration: none; color: black;" href="#">About Us</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Delivery Information</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Privacy Policy</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Terms &amp; Conditions</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Contact Us</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Support Center</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col wow animate__ animate__fadeInUp animated" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h4 style="margin-left: 30px;" class="widget-title">Account</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0" style="list-style: none;" >
+                            <li><a style=" text-decoration: none; color: black;" href="#">Sign In</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">View Cart</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">My Wishlist</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Track My Order</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Help Ticket</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Shipping Details</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Compare products</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col wow animate__ animate__fadeInUp animated" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        <h4 style="margin-left: 30px;" class="widget-title">Corporate</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0" style="list-style: none;">
+                            <li><a style=" text-decoration: none; color: black;" href="#">Become a Vendor</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Affiliate Program</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Farm Business</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Farm Careers</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Our Suppliers</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Accessibility</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Promotions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget col wow animate__ animate__fadeInUp animated" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                        <h4 style="margin-left: 30px;" class="widget-title">Popular</h4>
+                        <ul class="footer-list mb-sm-5 mb-md-0" style="list-style: none;">
+                            <li><a style=" text-decoration: none; color: black;" href="#">Milk &amp; Flavoured Milk</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Butter and Margarine</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Eggs Substitutes</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Marmalades</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Sour Cream and Dips</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Tea &amp; Kombucha</a></li>
+                            <li><a style=" text-decoration: none; color: black;" href="#">Cheese</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-widget widget-install-app col wow animate__ animate__fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <h4 class="widget-title">Install App</h4>
+                        <p class="">From App Store or Google Play</p>
+                        <div class="download-app" style="display: flex;">
+                            <a href="#" class="hover-up mb-sm-2 mb-lg-0"><img style="width: 120px;" class="active" src="./Assets/Images/app-store.jpg" alt=""></a>
+                            <a href="#" class="hover-up mb-sm-2"><img style="width: 120px;" src="./Assets/Images/google-play.jpg" alt=""></a>
+                        </div>
+                        <p class="mb-20">Secured Payment Gateways</p>
+                        <img class="" src="./Assets/Images/payment-method.png" alt="">
+                    </div>
+                </div>
+        </div></section>
+        <hr>
+        <div class="container pb-30 wow animate__ animate__fadeInUp animated" data-wow-delay="0" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="row align-items-center">
+                <div class="col-12 mb-30">
+                    <div class="footer-bottom"></div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <p class="font-sm mb-0" style="color: #72818C;">© 2024, <strong class="text-brand" style="color:rgb(41, 165, 108);">Nest</strong> - HTML Ecommerce Template <br>All rights reserved</p>
+                </div>
+                <div class="col-xl-4 col-lg-6 text-center d-none d-xl-block">
+                    <div class="hotline d-lg-inline-flex mr-30">
+                        <img style="width: 30px;" src="./Assets/Images/phone-call.svg" alt="hotline">
+                        <p>
+                            <strong style="color:rgb(41, 165, 108); margin-right: 55px;font-weight: bold;">1900 - 6666</strong>
+                            <span style="color: #72818C; display: block;">Working 8:00 - 22:00</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 text-end d-none d-md-block">
+                    <div class="mobile-social-icon" style="display: flex; margin-left: 113px;">
+                        <h6 style="margin-right: 10px;">Follow Us</h6>
+                        <i style="margin-right: 10px;border-radius: 10px;font-size: 20px ;color: #29A56C;" class="fa-brands fa-facebook"></i>
+                        <i style="margin-right: 10px;border-radius: 10px;font-size: 20px ;color: #29A56C;"class="fa-brands fa-square-youtube"></i>
+                        <i style="margin-right: 10px;border-radius: 10px;font-size: 20px ;color: #29A56C;"class="fa-brands fa-pinterest"></i>
+                        <i style="margin-right: 10px;border-radius: 10px;font-size: 20px ;color: #29A56C;"class="fa-brands fa-square-instagram"></i>
+                        <i style="margin-right: 10px;border-radius: 10px;font-size: 20px ;color: #29A56C;" class="fa-brands fa-square-twitter"></i>              
+                    </div>
+                    <p style="color: #72818C;" class="font-sm">Up to 15% discount on your first subscribe</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
